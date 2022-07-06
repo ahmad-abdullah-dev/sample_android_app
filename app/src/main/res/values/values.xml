@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <font name="fontMainLight"         >@font/lato_light</font>
+    <font name="fontMainRegular"       >@font/lato_regular</font>
+    <font name="fontMainSemiBold"      >@font/lato_medium</font>
+    <font name="fontMainBold"          >@font/lato_bold</font>
+    <font name="fontSecondaryLight"    >@font/sf_ui_display_light</font>
+    <font name="fontSecondaryRegular"  >@font/sf_ui_display_regular</font>
+    <font name="fontSecondarySemiBold" >@font/sf_ui_display_medium</font>
+    <font name="fontSecondaryBold"     >@font/sf_ui_display_bold</font>
+
+</resources>
