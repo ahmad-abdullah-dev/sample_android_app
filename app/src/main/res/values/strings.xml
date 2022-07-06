@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">sample_android_app</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="items_list_fragment_label">Items List</string>
+    <string name="item_details_fragment_label">Item Details</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="list_item__name">Name</string>
+    <string name="list_item__price">Price</string>
+    <string name="list_item__uid">UID</string>
+    <string name="list_item__created_at">Created at</string>
+    <string name="layout_no_info__no_data">No data</string>
+
+</resources>

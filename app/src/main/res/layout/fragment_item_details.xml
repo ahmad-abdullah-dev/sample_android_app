@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.sample_android_app.models.data.Item" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.ItemDetailsFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detailsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/image_details" />
+
+                <LinearLayout
+                    android:id="@+id/nameLinearLayout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/value24"
+                    android:layout_marginHorizontal="@dimen/value16"
+
+                    android:orientation="vertical"
+
+                    android:paddingStart="@dimen/value12">
+
+                    <TextView
+                        style="@style/ListItem_Key"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text='@string/list_item__name' />
+
+                    <TextView
+                        style="@style/ListItem_Value"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/value4"
+
+                        android:text='@{ item.name }' />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/priceLinearLayout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/value24"
+                    android:layout_marginHorizontal="@dimen/value16"
+
+                    android:orientation="vertical"
+
+                    android:paddingStart="@dimen/value12">
+
+                    <TextView
+                        style="@style/ListItem_Key"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text='@string/list_item__price' />
+
+                    <TextView
+                        style="@style/ListItem_Value"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/value4"
+
+                        android:text='@{ item.price }' />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/createdLinearLayout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/value24"
+                    android:layout_marginHorizontal="@dimen/value16"
+
+                    android:orientation="vertical"
+
+                    android:paddingStart="@dimen/value12">
+
+                    <TextView
+                        style="@style/ListItem_Key"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text='@string/list_item__created_at' />
+
+                    <TextView
+                        style="@style/ListItem_Value"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/value4"
+
+                        android:text='@{ item.createdAt }' />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uidLinearLayout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/value24"
+                    android:layout_marginHorizontal="@dimen/value16"
+
+                    android:orientation="vertical"
+
+                    android:paddingStart="@dimen/value12">
+
+                    <TextView
+                        style="@style/ListItem_Key"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text='@string/list_item__uid' />
+
+                    <TextView
+                        style="@style/ListItem_Value"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/value4"
+
+                        android:text='@{ item.uid }' />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value20" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
